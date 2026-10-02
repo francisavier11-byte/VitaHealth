@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VitaHealth - Your Health Is Our Mission</title>
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+  <div class="logo">
+    <span class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></span> VitaHealth
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Service</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+ <div class="nav-buttons">
+  <div class="auth-dropdown-wrap">
+    <a href="#" class="btn-signin" id="signinBtn">Sign in</a>
+    <div class="auth-dropdown" id="signinDropdown">
+      <span class="auth-logo" width="48" height="48" viewBox="0 0 16 16" fill="#fff"><i class="fa-solid fa-heart-pulse"></i> VitaHealth</span>
+      <h3>Sign in to your account</h3>
+
+      <label>Username or email address</label>
+      <input type="email">
+
+      <div class="label-row">
+        <label>Password</label>
+        <a href="#" class="link">Forgot password?</a>
+      </div>
+      <input type="password">
+
+      <button type="button" class="btn-primary">Sign in</button>
+
+      <div class="divider"><span>or</span></div>
+
+      <button type="button" class="btn-social"><span class="g-icon">G</span> Continue with Google</button>
+      <button type="button" class="btn-social">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.5-1-2.5-3.7zM14.2 5.8c.6-.8 1.1-1.8.9-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-.9 2.7 1 .1 2-.5 2.6-1.3z"/></svg>
+        Continue with Apple
+      </button>
+
+      <p class="small">New here? <a href="#" class="link">Create an account</a></p>
+    </div>
+  </div>
+
+  <div class="auth-dropdown-wrap">
+    <a href="#" class="btn-signup" id="signupBtn">Sign up</a>
+    <div class="auth-dropdown" id="signupDropdown">
+      <h3>Create your account</h3>
+      <label>Full name</label>
+      <input type="text">
+      <label>Email address</label>
+      <input type="email">
+      <label>Password</label>
+      <input type="password">
+      <button type="button" class="btn-primary">Sign up</button>
+    </div>
+  </div>
+</div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="https://www.pexels.com/download/video/6130022/" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-text">
+    <h1>Your Health,<br><span class="highlight">Our Priority.</span>.</h1>
+    <p>Quality healthcare, compassionate service and trusted medical professionals dedicated to keeping you and your family healthy</p>
+  <a href="#" class="btn-appointment" onclick="document.getElementById('bookingModal').classList.add('show'); return false;">Get Appointment</a>
+
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="about-images">
+    <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG9zcGl0YWwlMjBlcXVpcG1lbnR8ZW58MHx8MHx8fDA%3D" alt="Doctor with stethoscope" class="img-tall">
+    <img src="https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2VuZXJhbCUyMGRvY3RvcnN8ZW58MHx8MHx8fDA%3D" alt="Lab work" class="img-wide">
+  </div>
+
+  <div class="about-text">
+    <h2>About Our <span class="highlight-dark">Clinic</span></h2>
+    <p>Medicine is the science and practice of caring for a patient, managing the diagnosis, prognosis, prevention, treatment, palliation of their injury or disease, and promoting their health.</p>
+    <a href="about.html" class="see-more">See More</a>
+  </div>
+</section>
+<section class="services" id="service">
+  <h2 class="services-title">Our <span class="highlight-dark">Service</span></h2>
+
+  <div class="services-grid">
+    <div class="service-card active">
+      <div class="service-icon"><i class="fa-solid fa-user-doctor"></i></div>
+      <h3>Consultation</h3>
+      <a href="#">Find Service</a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <h3>Diagnosis</h3>
+      <a href="#">Find Service</a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon"><i class="fa-solid fa-kit-medical"></i></div>
+      <h3>Treatment</h3>
+      <a href="#">Find Service</a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon"><i class="fa-solid fa-prescription-bottle-medical"></i></div>
+      <h3>Prescription</h3>
+      <a href="#">Find Service</a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+      <h3>Online Support</h3>
+      <a href="#">Find Service</a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon"><i class="fa-solid fa-shield-heart"></i></div>
+      <h3>Insurance</h3>
+      <a href="#">Find Service</a>
+    </div>
+  </div>
+</section>
+<section class="contact-options">
+  <div class="options-text">
+    <p>Starting with basic biology it is generally divided into areas of specialisation, such as anatomy, physiology and pathology with some biochemistry, microbiology, molecular biology and genetics.</p>
+
+    <div class="options-grid">
+      <div class="option-box active" data-target="panel-chat">
+        <span><i class="fa-solid fa-comment-medical"></i></span> Chat
+      </div>
+      <div class="option-box" data-target="panel-query">
+        <span><i class="fa-solid fa-circle-question"></i></span> Query
+      </div>
+      <div class="option-box" data-target="panel-phone">
+        <span><i class="fa-solid fa-phone"></i></span> Phone Call
+      </div>
+      <div class="option-box" data-target="panel-video">
+        <span><i class="fa-solid fa-video"></i></span> Videocall
+      </div>
+    </div>
+
+    <div class="option-panels">
+      <div class="option-panel active" id="panel-chat">
+        <textarea placeholder="Type your message..."></textarea>
+        <button class="send-btn">Send Message</button>
+      </div>
+
+      <div class="option-panel" id="panel-query">
+        <input type="text" placeholder="Your name">
+        <textarea placeholder="Ask your question..."></textarea>
+        <button class="send-btn">Submit Question</button>
+      </div>
+
+      <div class="option-panel" id="panel-phone">
+        <p>Call us on:</p>
+        <a href="tel:+256700000000" class="phone-number">+256 700 000 000</a>
+      </div>
+
+      <div class="option-panel" id="panel-video">
+        <p>Start a video call with us:</p>
+        <a href="https://meet.google.com/" target="_blank" class="send-btn">Start Video Call</a>
+      </div>
+    </div>
+
+    <div class="chat-bubble"><i class="fa-solid fa-comments"></i></div>
+  </div>
+
+  <div class="options-image">
+    <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=600" alt="Surgery in progress">
+  </div>
+</section>
+
+</section>
+
+<section class="testimonials">
+  <h2 class="testimonials-title">Patient <span class="highlight-dark">Testimonials</span></h2>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>Medical Science Covers Many Subjects Which Try To Explain How The Human Body Works Repairs Delay More Simple.</p>
+      <h4>David Brown</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>But Evidence Suggests That Regular Activity Or Exercise Is Unlikely To Cause Actual Knee Damage. Learn How To Keep Active And Avoid Knee Pain.</p>
+      <h4>Loyzius Lons</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>Supply Chain Slowdowns And A Need For More Trained Technicians Fuel Lengthy Delays For Even Simple Repairs.</p>
+      <h4>Faraq Abdul</h4>
+    </div>
+  </div>
+</section>
+
+<div class="modal" id="bookingModal">
+
+  <div class="modal-box">
+
+    <span class="modal-close" id="closeBooking">&times;</span>
+
+    <h2>Book an Appointment</h2>
+
+    <form id="bookingForm">
+
+      <label for="name">Full Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your name"
+        required
+      >
+
+      <label for="phone">Phone Number</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="0700 000000"
+        required
+      >
+
+      <label for="service">Service</label>
+      <select id="service" name="service" required>
+
+        <option value="">Choose Service</option>
+
+        <optgroup label="General Care">
+          <option value="General consultation">
+            General consultation
+          </option>
+
+          <option value="Child health and vaccination">
+            Child health and vaccination
+          </option>
+
+          <option value="Women's health and antenatal care">
+            Women's health and antenatal care
+          </option>
+
+          <option value="Family planning">
+            Family planning
+          </option>
+        </optgroup>
+
+        <optgroup label="Diagnosis">
+          <option value="Laboratory testing">
+            Laboratory testing
+          </option>
+
+          <option value="Medical examinations">
+            Medical examinations
+          </option>
+
+          <option value="Diagnostic imaging">
+            Diagnostic imaging
+          </option>
+
+          <option value="Early condition detection">
+            Early condition detection
+          </option>
+        </optgroup>
+
+        <optgroup label="Specialist Services">
+          <option value="Dental care">Dental care</option>
+          <option value="Eye care">Eye care</option>
+          <option value="Mental health counseling">
+            Mental health counseling
+          </option>
+          <option value="Physiotherapy">
+            Physiotherapy
+          </option>
+        </optgroup>
+
+        <optgroup label="Treatment and Follow-up">
+          <option value="Minor procedures and wound care">
+            Minor procedures and wound care
+          </option>
+
+          <option value="Nutrition and weight advice">
+            Nutrition and weight advice
+          </option>
+
+          <option value="Prescription refills">
+            Prescription refills
+          </option>
+
+          <option value="Telehealth consultation">
+            Telehealth consultation
+          </option>
+        </optgroup>
+
+      </select>
+
+
+      <label for="doctor">Doctor</label>
+
+      <select id="doctor" name="doctor" required>
+
+        <option value="">Choose Doctor</option>
+
+        <optgroup label="General Care">
+          <option value="frank-junior">
+            Dr. Frank Junior
+          </option>
+
+          <option value="david-opa">
+            Dr. David Opa
+          </option>
+        </optgroup>
+
+        <optgroup label="Diagnosis">
+          <option value="angel-angellah">
+            Dr. Angel Angellah
+          </option>
+        </optgroup>
+
+        <optgroup label="Specialist Services">
+          <option value="alinaitwe-reagan">
+            Dr. Alinaitwe Reagan
+          </option>
+        </optgroup>
+
+        <optgroup label="Treatment and Follow-up">
+          <option value="micheal-mugisa">
+            Dr. Micheal Mugisa
+          </option>
+        </optgroup>
+
+      </select>
+
+
+      <label for="date">Preferred Date</label>
+      <input
+        type="date"
+        id="date"
+        name="date"
+        required
+      >
+
+
+      <label for="time">Preferred Time</label>
+      <input
+        type="time"
+        id="time"
+        name="time"
+        required
+      >
+
+
+      <button type="submit" class="btn-submit">
+        Confirm Booking
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+<!-- ================= SYMPTOM CHECKER (start) ================= -->
+<section class="symptom-checker" id="symptom-checker" aria-labelledby="scTitle">
+
+  <div class="sc-header">
+    <span class="sc-tag">Health Guidance Tool</span>
+    <h2 id="scTitle">Symptom <span class="highlight-dark">Checker</span></h2>
+    <p>Answer a few quick questions and get general health guidance in under a minute.</p>
+  </div>
+
+  <div class="sc-card" id="scCard">
+
+    <!-- Progress indicator -->
+      <!-- Progress indicator -->
+    <div class="sc-progress-wrap">
+      <p class="sc-step-count" id="scStepCount">Step 1 of 3</p>
+
+      <ol class="sc-progress">
+        <li class="sc-progress-item is-active" data-step="1" aria-current="step">
+          <button type="button" class="sc-step-btn" data-goto="1">
+            <span class="sc-dot">1</span><span class="sc-progress-label">Symptoms</span>
+          </button>
+        </li>
+        <li class="sc-progress-item" data-step="2">
+          <button type="button" class="sc-step-btn" data-goto="2">
+            <span class="sc-dot">2</span><span class="sc-progress-label">Details</span>
+          </button>
+        </li>
+        <li class="sc-progress-item" data-step="3">
+          <button type="button" class="sc-step-btn" data-goto="3">
+            <span class="sc-dot">3</span><span class="sc-progress-label">Results</span>
+          </button>
+        </li>
+      </ol>
+    </div>
+
+    <!-- ========== STEP 1: SELECT SYMPTOMS ========== -->
+    <div class="sc-panel" id="scStep1" data-step="1">
+      <h3 class="sc-panel-title" id="scPanelTitle1" tabindex="-1">How are you feeling today?</h3>
+      <p class="sc-panel-sub">Select every symptom you are experiencing right now.</p>
+
+      <fieldset class="sc-fieldset">
+        <legend class="sc-sr-only">Select your symptoms</legend>
+        <div class="sc-options">
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="fever">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Fever</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="headache">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Headache</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="cough">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Cough</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="sore-throat">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Sore throat</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="runny-nose">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Runny nose</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="body-weakness">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Body weakness</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="dizziness">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Dizziness</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="stomach-pain">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Stomach pain</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="nausea">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Nausea</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="vomiting">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Vomiting</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="diarrhea">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Diarrhea</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="chest-pain">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Chest pain</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="shortness-of-breath">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Shortness of breath</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="back-pain">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Back pain</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="joint-pain">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Joint pain</span></span>
+          </label>
+
+          <label class="sc-option">
+            <input type="checkbox" name="symptom" value="loss-of-consciousness">
+            <span class="sc-option-box"><span class="sc-check" aria-hidden="true"></span><span class="sc-option-text">Loss of consciousness / fainting</span></span>
+          </label>
+
+        </div>
+      </fieldset>
+
+      <p class="sc-count" id="scCount">0 symptoms selected</p>
+
+      <!-- Shows instantly if a serious symptom is ticked -->
+      <div class="sc-alert" id="scLiveAlert" role="alert" hidden>
+        <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+        <span>Chest pain, difficulty breathing and loss of consciousness can be serious. If this is happening now, seek urgent medical attention.</span>
+      </div>
+
+      <p class="sc-error" id="scError1" role="alert" hidden>Please select at least one symptom to continue.</p>
+
+      <div class="sc-actions sc-actions-end">
+        <button type="button" class="sc-btn sc-btn-primary" id="scContinue1">
+          Continue <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========== STEP 2: FOLLOW-UP QUESTIONS ========== -->
+    <div class="sc-panel" id="scStep2" data-step="2" hidden>
+      <h3 class="sc-panel-title" id="scPanelTitle2" tabindex="-1">A few quick questions</h3>
+      <p class="sc-panel-sub">This helps us give you more useful guidance.</p>
+
+      <fieldset class="sc-question" id="scGroup-duration">
+        <legend>1. How long have you had these symptoms?</legend>
+        <div class="sc-choices">
+          <label class="sc-choice"><input type="radio" name="duration" value="less-1-day"><span class="sc-choice-text">Less than 1 day</span></label>
+          <label class="sc-choice"><input type="radio" name="duration" value="1-3-days"><span class="sc-choice-text">1–3 days</span></label>
+          <label class="sc-choice"><input type="radio" name="duration" value="more-3-days"><span class="sc-choice-text">More than 3 days</span></label>
+          <label class="sc-choice"><input type="radio" name="duration" value="more-1-week"><span class="sc-choice-text">More than 1 week</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="sc-question" id="scGroup-severity">
+        <legend>2. How severe are your symptoms?</legend>
+        <div class="sc-choices">
+          <label class="sc-choice"><input type="radio" name="severity" value="mild"><span class="sc-choice-text">Mild</span></label>
+          <label class="sc-choice"><input type="radio" name="severity" value="moderate"><span class="sc-choice-text">Moderate</span></label>
+          <label class="sc-choice"><input type="radio" name="severity" value="severe"><span class="sc-choice-text">Severe</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="sc-question" id="scGroup-trend">
+        <legend>3. Is your condition getting better or worse?</legend>
+        <div class="sc-choices">
+          <label class="sc-choice"><input type="radio" name="trend" value="better"><span class="sc-choice-text">Getting better</span></label>
+          <label class="sc-choice"><input type="radio" name="trend" value="same"><span class="sc-choice-text">Staying the same</span></label>
+          <label class="sc-choice"><input type="radio" name="trend" value="worse"><span class="sc-choice-text">Getting worse</span></label>
+        </div>
+      </fieldset>
+
+      <p class="sc-error" id="scError2" role="alert" hidden>Please answer all three questions to continue.</p>
+
+      <div class="sc-actions sc-actions-between">
+        <button type="button" class="sc-btn sc-btn-secondary" id="scBack2">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back
+        </button>
+        <button type="button" class="sc-btn sc-btn-primary" id="scContinue2">
+          Continue <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========== STEP 3: RESULTS ========== -->
+    <div class="sc-panel" id="scStep3" data-step="3" hidden>
+
+      <div class="sc-emergency" id="scEmergency" role="alert" hidden>
+        <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+        <div>
+          <strong>Seek urgent medical attention.</strong>
+          <span id="scEmergencyText"></span>
+        </div>
+      </div>
+
+      <h3 class="sc-panel-title" id="scPanelTitle3" tabindex="-1">Your Health Guidance</h3>
+      <p class="sc-panel-sub">Your symptoms may be associated with the pattern below. This is general health guidance, not a diagnosis.</p>
+
+      <div class="sc-results">
+
+        <div class="sc-result sc-result-main">
+          <span class="sc-result-label">Possible health concern</span>
+          <p class="sc-concern" id="resConcern"></p>
+        </div>
+
+        <div class="sc-result">
+          <span class="sc-result-label">Symptoms selected</span>
+          <div class="sc-chips" id="resSymptoms"></div>
+          <p class="sc-result-meta" id="resAnswers"></p>
+        </div>
+
+        <div class="sc-result">
+          <span class="sc-result-label">General guidance</span>
+          <p class="sc-result-value" id="resGuidance"></p>
+        </div>
+
+        <div class="sc-result-row">
+          <div class="sc-result">
+            <span class="sc-result-label">Recommended department</span>
+            <p class="sc-result-value" id="resDepartment"></p>
+          </div>
+          <div class="sc-result">
+            <span class="sc-result-label">Urgency level</span>
+            <p class="sc-result-value"><span id="resUrgency" class="sc-badge"></span></p>
+          </div>
+        </div>
+
+        <div class="sc-result">
+          <span class="sc-result-label">Recommended next action</span>
+          <p class="sc-result-value" id="resAction"></p>
+        </div>
+
+      </div>
+
+      <div class="sc-actions sc-actions-results">
+        <button type="button" class="sc-btn sc-btn-primary" id="scBook">
+          <i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book an Appointment
+        </button>
+        <button type="button" class="sc-btn sc-btn-secondary" id="scReset">
+          <i class="fa-solid fa-rotate-left" aria-hidden="true"></i> Check Again
+        </button>
+      </div>
+    </div>
+
+    <!-- Disclaimer (always visible) -->
+    <p class="sc-disclaimer">
+      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+      <span>This symptom checker provides general health information and is not a medical diagnosis. If you are experiencing severe or worsening symptoms, seek professional medical care.</span>
+    </p>
+
+  </div>
+</section>
+<!-- ================= SYMPTOM CHECKER (end) ================= -->
+ <script src="symptom-checker.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+<footer class="footer">
+  <div class="footer-col footer-brand">
+    <div class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></span></span> VitaHealth
+    </div>
+    <p>Medicine is the science and practice of caring for a patient, managing the diagnosis, health.</p>
+    <div class="social-icons">
+      <a href="https://wa.me/0708806862"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://x.com/francisavier11"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.youtube.com/@FrancisXavier-n4u"><i class="fa-brands fa-youtube"></i></a></a>
+    </div>
+  </div>
+
+  <div class="footer-col">
+    <h4>Menu</h4>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Service</a>
+    <a href="#blog.html">Blog</a>
+    <a href="#contact.html">Contact</a>
+  </div>
+
+  <div class="footer-col">
+    <h4>Support</h4>
+    <a href="#">Help Center</a>
+    <a href="#">Account Information</a>
+    <a href="#">Service</a>
+  </div>
+
+  <div class="footer-col">
+    <h4>Get In Touch</h4>
+    <p>(+256) 758 458 083 </p>
+    <p>vitahealth@gmail.Com</p>
+  </div>
+</footer>
+</html>

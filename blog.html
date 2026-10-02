@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - vitahealth</title>
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+  <div class="logo">
+    <span class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></span> VitaHealth
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Service</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  
+ <div class="nav-buttons">
+  <div class="auth-dropdown-wrap">
+    <a href="#" class="btn-signin" id="signinBtn">Sign in</a>
+    <div class="auth-dropdown" id="signinDropdown">
+      <span class="auth-logo" width="48" height="48" viewBox="0 0 16 16" fill="#fff"><i class="fa-solid fa-heart-pulse"></i> VitaHealth</span>
+      <h3>Sign in to your account</h3>
+
+      <label>Username or email address</label>
+      <input type="email">
+
+      <div class="label-row">
+        <label>Password</label>
+        <a href="#" class="link">Forgot password?</a>
+      </div>
+      <input type="password">
+
+      <button type="button" class="btn-primary">Sign in</button>
+
+      <div class="divider"><span>or</span></div>
+
+      <button type="button" class="btn-social"><span class="g-icon">G</span> Continue with Google</button>
+      <button type="button" class="btn-social">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.5-1-2.5-3.7zM14.2 5.8c.6-.8 1.1-1.8.9-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-.9 2.7 1 .1 2-.5 2.6-1.3z"/></svg>
+        Continue with Apple
+      </button>
+
+      <p class="small">New here? <a href="#" class="link">Create an account</a></p>
+    </div>
+  </div>
+
+  <div class="auth-dropdown-wrap">
+    <a href="#" class="btn-signup" id="signupBtn">Sign up</a>
+    <div class="auth-dropdown" id="signupDropdown">
+      <h3>Create your account</h3>
+      <label>Full name</label>
+      <input type="text">
+      <label>Email address</label>
+      <input type="email">
+      <label>Password</label>
+      <input type="password">
+      <button type="button" class="btn-primary">Sign up</button>
+    </div>
+  </div>
+</div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<section class="page-banner">
+  <img src="https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9jdG9yfGVufDB8fDB8fHww" alt="Clinic blog" class="banner-bg">
+  <div class="banner-overlay"></div>
+
+  <div class="banner-content">
+    <h1>Our <span class="highlight">Blog</span></h1>
+    <p>Health tips, medical insights, and news from our team of specialists.</p>
+  </div>
+</section>
+
+<section class="featured-post">
+  <div class="featured-image">
+    <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured article">
+  </div>
+
+  <div class="faetured-content-wrap">
+    <div class="featured-content">
+    <div class="post-category"><h3>Health Tips</h3></div>
+    <h2>5 Simple Habits That Can Add Years To Your Life</h2>
+    <p>Small, consistent lifestyle changes can have a bigger impact on long-term health than most people realize. Here's what our specialists recommend starting with today.</p>
+
+    <div class="post-meta">
+      <span><i class="fa-solid fa-user-doctor"></i> Dr. Francis Xavier</span>
+      <span><i class="fa-solid fa-calendar"></i> Sept 12, 2026</span>
+    </div>
+
+    <a href="#" class="learn-more">Read Full Article</a>
+  </div>
+  </div>
+</section>
+
+<section class="blog-grid-section">
+  <span class="section-tag centered">Latest Articles</span>
+  <h2 class="services-title">From Our <span class="highlight-dark">Blog</span></h2>
+
+  <div class="blog-grid">
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1565895405138-6c3a1555da6a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8RWF0aW5nJTIwRm9yJTIwRW5lcmd5JTNBJTIwV2hhdCUyMFJlYWxseSUyMFdvcmtzfGVufDB8fDB8fHww" alt="Nutrition tips">
+      <div class="blog-card-body">
+        <span class="post-category">Nutrition</span>
+        <h3>Eating For Energy: What Really Works</h3>
+        <p>A closer look at the foods that actually keep your energy steady through the day.</p>
+        <div class="post-meta small">
+          <span><i class="fa-solid fa-user-doctor"></i> Dr. Tugume Mark</span>
+          <span><i class="fa-solid fa-calendar"></i> Sept 8, 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="https://plus.unsplash.com/premium_photo-1770789463387-3cc4c7e49307?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TWFuYWdpbmclMjBTdHJlc3MlMjBJbiUyMEElMjBCdXN5JTIwV29ybGR8ZW58MHx8MHx8fDA%3D" alt="Mental health">
+      <div class="blog-card-body">
+        <span class="post-category">Mental Health</span>
+        <h3>Managing Stress In A Busy World</h3>
+        <p>Practical, doctor-backed techniques to help you stay calm under pressure.</p>
+        <div class="post-meta small">
+          <span><i class="fa-solid fa-user-doctor"></i> Dr. N. Angella</span>
+          <span><i class="fa-solid fa-calendar"></i> Sept 3, 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RXhlcmNpc2UlMjBNeXRocyUyMFlvdSUyMFNob3VsZCUyMFN0b3AlMjBCZWxpZXZpbmd8ZW58MHx8MHx8fDA%3D" alt="Fitness">
+      <div class="blog-card-body">
+        <span class="post-category">Fitness</span>
+        <h3>Exercise Myths You Should Stop Believing</h3>
+        <p>Separating fact from fiction when it comes to safe, effective workouts.</p>
+        <div class="post-meta small">
+          <span><i class="fa-solid fa-user-doctor"></i> Dr. B. Juma</span>
+          <span><i class="fa-solid fa-calendar"></i> July 27, 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Preventive care">
+      <div class="blog-card-body">
+        <span class="post-category">Preventive Care</span>
+        <h3>Why Annual Checkups Matter More Than You Think</h3>
+        <p>Catching issues early can make all the difference — here's what to expect.</p>
+        <div class="post-meta small">
+          <span><i class="fa-solid fa-user-doctor"></i> Dr. Francis Xavier</span>
+          <span><i class="fa-solid fa-calendar"></i> Aug  2, 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1517898717281-8e4385a41802?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sleep health">
+      <div class="blog-card-body">
+        <span class="post-category">Sleep</span>
+        <h3>The Real Cost Of Poor Sleep</h3>
+        <p>How sleep quality affects everything from mood to immune health.</p>
+        <div class="post-meta small">
+          <span><i class="fa-solid fa-user-doctor"></i> Dr. Tugume Mark</span>
+          <span><i class="fa-solid fa-calendar"></i> Aug 18, 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="https://plus.unsplash.com/premium_photo-1661407464791-94ec92ac1055?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Child health">
+      <div class="blog-card-body">
+        <span class="post-category">Pediatrics</span>
+        <h3>Keeping Kids Healthy Through Flu Season</h3>
+        <p>Simple, proven steps parents can take to protect their children.</p>
+        <div class="post-meta small">
+            <span><i class="fa-solid fa-user-doctor"></i> Dr. N. Angella</span>
+          <span><i class="fa-solid fa-calendar"></i> Aug 20, 2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cta-banner">
+  <div class="cta-content">
+    <h2>Want Health Tips In Your Inbox?</h2>
+    <p>Subscribe to our newsletter for the latest articles from our medical team.</p>
+    <a href="index.html#contact" class="btn-cta">Subscribe Now</a>
+  </div>
+</section>
+<script src="script.js"></script>
+
+<footer class="footer">
+  <div class="footer-col footer-brand">
+    <div class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></span></span> VitaHealth
+    </div>
+    <p>Medicine is the science and practice of caring for a patient, managing the diagnosis, health.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a></a>
+    </div>
+  </div>
+
+  <div class="footer-col">
+    <h4>Menu</h4>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Service</a>
+    <a href="#blog.html">Blog</a>
+    <a href="#contact.html">Contact</a>
+  </div>
+
+  <div class="footer-col">
+    <h4>Support</h4>
+    <a href="#">Help Center</a>
+    <a href="#">Account Information</a>
+    <a href="#">Service</a>
+  </div>
+
+  <div class="footer-col">
+    <h4>Get In Touch</h4>
+    <p>(+256) 758 458 083 </p>
+    <p>vitahealth@gmail.Com</p>
+  </div>
+</footer>
+</html>
